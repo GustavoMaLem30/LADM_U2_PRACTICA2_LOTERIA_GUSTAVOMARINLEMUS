@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/carta1"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/carta5"/>
+
+    <ImageView
+        android:id="@+id/carta2"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="37dp"
+        android:layout_toRightOf="@id/carta1"
+        android:src="@drawable/carta4"/>
+
+    <ImageView
+        android:id="@+id/carta3"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="37dp"
+        android:layout_toRightOf="@id/carta2"
+        android:src="@drawable/carta3"/>
+
+    <ImageView
+        android:id="@+id/carta4"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="37dp"
+        android:layout_toRightOf="@id/carta3"
+        android:src="@drawable/carta2"/>
+
+    <ImageView
+        android:id="@+id/ImgCartaMostrada"
+        android:layout_width="319dp"
+        android:layout_height="320dp"
+        android:layout_below="@+id/carta1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/carta1"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/ImgCartaMostrada"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressbar"
+        android:id="@+id/textoContador"
+        android:textSize="20dp"
+        android:text="Numero cartas: 0/54"/>
+
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textoContador"
+        android:text="INICIAR"
+        android:background="#006293"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btnLoteria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnIniciar"
+        android:layout_marginTop="5dp"
+        android:background="#006293"
+        android:text="¡LOTERIA!"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnLoteria"
+        android:layout_marginTop="5dp"
+        android:id="@+id/btnVerificar"
+        android:textSize="15dp"
+        android:background="#006293"
+        android:textColor="@color/white"
+        android:text="VERIFICAR CARTAS RESTANTE"/>
+</RelativeLayout>
